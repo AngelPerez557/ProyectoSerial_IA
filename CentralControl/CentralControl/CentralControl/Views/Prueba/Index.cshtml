@@ -2,76 +2,13 @@
     ViewBag.Title = "Control";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Control</title>
+<h2>Index</h2>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-
-        .contenedor {
-            width: 400px;
-            margin: 80px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,.2);
-            text-align: center;
-        }
-
-        h2 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .boton {
-            width: 150px;
-            padding: 15px;
-            font-size: 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            color: white;
-            margin: 10px;
-            transition: .3s;
-        }
-
-        .encender {
-            background: #28a745;
-        }
-
-            .encender:hover {
-                background: #218838;
-            }
-
-        .apagar {
-            background: #dc3545;
-        }
-
-            .apagar:hover {
-                background: #c82333;
-            }
-    </style>
-</head>
-
-<body>
-
-    <div class="contenedor">
-        <h2>Control de Dispositivo</h2>
-
-        <button class="boton encender">
-            Encender
-        </button>
-
-        <button class="boton apagar">
-            Apagar
-        </button>
-    </div>
-
-</body>
-</html>
+<form method="post">
+    <button type="submit" value="a" name="op" class="btn-block btn-sucess btn-lg">
+        Encender
+    </button>
+    <button type="submit" value="o" name="op" class="btn btn-danger btn-lg">
+        Apagar
+    </button>
+</form>
